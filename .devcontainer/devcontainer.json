@@ -1,0 +1,20 @@
+{
+    "name": "react-todos-app",
+    "dockerFile": "Dockerfile",
+    "appPort": [
+        1234,
+        33333,
+        9009
+    ],
+    "runArgs": [
+        "-u",
+        "node"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postCreateCommand": "yarn install",
+    "extensions": [
+        "dbaeumer.vscode-eslint"
+    ]
+}
