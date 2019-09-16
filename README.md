@@ -1,2 +1,10 @@
 # todos
-opinionated react setup to be used as reference or starting poing
+opinionated react setup to be used as reference 
+
+- vs code dev containers
+- parcel for fast development (fast hmr)
+- typescript
+- react router
+- graphql (apollo client)
+- storybook
+- storyshots
