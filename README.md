@@ -6,5 +6,6 @@ opinionated react setup to be used as reference
 - typescript
 - react router
 - graphql (apollo client)
+- graphql code generation
 - storybook
 - storyshots
