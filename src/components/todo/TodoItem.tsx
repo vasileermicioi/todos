@@ -1,5 +1,13 @@
 import * as React from 'react'
 
-const TodoItem: React.FC = () => <div>Todo Item</div>
+interface TodoProps {
+    match?: {
+        params: {
+            id: number
+        }
+    }
+}
+
+const TodoItem: React.FC<TodoProps> = ({ match }: TodoProps) => <div>Todo Item {match && match.params.id}</div>
 
 export default TodoItem
