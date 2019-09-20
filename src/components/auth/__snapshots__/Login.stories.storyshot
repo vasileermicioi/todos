@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileProperties auth/Login default 1`] = `
+<div>
+  Login form
+</div>
+`;
