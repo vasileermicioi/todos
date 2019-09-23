@@ -33,7 +33,6 @@
     ]
   },
   "dependencies": {
-    "husky": "^3.0.5",
     "jest-transform-css": "^2.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -66,6 +65,7 @@
     "babel-plugin-react-css-modules": "^5.2.6",
     "babel-plugin-require-context-hook": "^1.0.0",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "husky": "^3.0.5",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "jest-specific-snapshot": "^2.0.0",

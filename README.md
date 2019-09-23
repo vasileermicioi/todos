@@ -2,7 +2,7 @@
 opinionated react setup to be used as reference 
 
 - [x] vs code dev containers
-- [x] pre-commit format and test run
+- [ ] pre-commit format and test run (partially implemented)
 - [x] parcel for fast development (fast hmr)
 - [x] react + typescript
 - [x] react router
