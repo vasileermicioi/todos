@@ -11,4 +11,9 @@ opinionated react setup to be used as reference
 - [ ] graphql (apollo client)
 - [ ] graphql with storybook
 - [ ] graphql code generation
+- [ ] useQuery graphql hook
+- [ ] material ui
+- [ ] authentication
+- [ ] example(s) of pages (with route) + containers + stateful components + stateless componentes
+
 
