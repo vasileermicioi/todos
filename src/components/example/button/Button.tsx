@@ -1,29 +1,29 @@
-import * as React from 'react';
-import './Button.css';
+import * as React from 'react'
+import './Button.css'
 
 export interface Props {
   /** this dictates what the button will say  */
-  label: string;
+  label: string
   /** this dictates what the button will do  */
-  onClick: () => void;
+  onClick: () => void
   /**
    * Disables onclick
    *
    * @default false
    **/
-  disabled?: boolean;
+  disabled?: boolean
 }
 
-const noop = () => { }; // tslint:disable-line
+const noop = () => {} // tslint:disable-line
 export const Button = (props: Props) => {
-  const { label, onClick, disabled = false } = props;
+  const { label, onClick, disabled = false } = props
   // const disabledclass = disabled ? 'disabled' : '';
   return (
     <div
-      className={['Button', disabled && 'disabled' || ""].join(' ')}
+      className={['Buttonn', (disabled && 'disabled') || ''].join(' ')}
       onClick={!disabled ? onClick : noop}
     >
       <span>{label}</span>
     </div>
-  );
-};
+  )
+}
