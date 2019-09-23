@@ -20,7 +20,7 @@ export const Button = (props: Props) => {
   // const disabledclass = disabled ? 'disabled' : '';
   return (
     <div
-      className={['Button', disabled && 'disabled' || ""].join(' ')}
+      className={['Buttonn', disabled && 'disabled' || ""].join(' ')}
       onClick={!disabled ? onClick : noop}
     >
       <span>{label}</span>
