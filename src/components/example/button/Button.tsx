@@ -17,10 +17,9 @@ export interface Props {
 const noop = () => {} // tslint:disable-line
 export const Button = (props: Props) => {
   const { label, onClick, disabled = false } = props
-  // const disabledclass = disabled ? 'disabled' : '';
   return (
     <div
-      className={['Buttonn', (disabled && 'disabled') || ''].join(' ')}
+      className={['Button', (disabled && 'disabled') || ''].join(' ')}
       onClick={!disabled ? onClick : noop}
     >
       <span>{label}</span>
