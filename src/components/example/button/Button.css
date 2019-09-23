@@ -14,3 +14,9 @@
   display: inline-flex;
   background-color: var(--ui-bkgd, #3d5567);
 }
+.Button.disabled {
+  opacity: 0.7;   
+}
+.Button.disabled span {
+  color: #ddd;
+}
