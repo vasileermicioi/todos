@@ -1,9 +1,9 @@
 import * as React from 'react'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Login from "../auth/Login"
-import Register from "../auth/Register"
-import TodoItem from "../todo/TodoItem"
-import TodoList from "../todo/TodoList"
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Login from '../auth/Login'
+import Register from '../auth/Register'
+import TodoItem from '../todo/TodoItem'
+import TodoList from '../todo/TodoList'
 
 export const App = () => (
   <Router>

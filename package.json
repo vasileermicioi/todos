@@ -16,7 +16,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettify && npm run test"
+      "pre-commit": "yarn prettify && yarn test"
     }
   },
   "engines": {
