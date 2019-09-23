@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileProperties todo/TodoItem default 1`] = `
+<div>
+  Todo Item 
+  1
+</div>
+`;

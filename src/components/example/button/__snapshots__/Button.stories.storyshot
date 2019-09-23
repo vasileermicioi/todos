@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileProperties example/Button default 1`] = `
+<div
+  className="Button "
+  onClick={[Function]}
+>
+  <span>
+    Enroll
+  </span>
+</div>
+`;
+
+exports[`FileProperties example/Button disabled 1`] = `
+<div
+  className="Button disabled"
+  onClick={[Function]}
+>
+  <span>
+    Disabled
+  </span>
+</div>
+`;
