@@ -1,11 +1,14 @@
 # todos
 opinionated react setup to be used as reference 
 
-- vs code dev containers
-- parcel for fast development (fast hmr)
-- typescript
-- react router
-- graphql (apollo client)
-- graphql code generation
-- storybook
-- storyshots
+- [x] vs code dev containers
+- [x] pre-commit format and test run
+- [x] parcel for fast development (fast hmr)
+- [x] react + typescript
+- [x] react router
+- [x] storybook
+- [x] storyshots (including css import)
+- [ ] graphql (apollo client)
+- [ ] graphql with storybook
+- [ ] graphql code generation
+
