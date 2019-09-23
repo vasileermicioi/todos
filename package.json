@@ -4,7 +4,7 @@
   "main": "src/index.tsx",
   "private": true,
   "scripts": {
-    "start": "parcel ./src/index.html --out-dir bin --no-cache --port 1234 --hmr-port 33333",
+    "start": "parcel ./src/index.html --out-dir bin --port 1234 --hmr-port 33333",
     "build": "yarn type-check && parcel build ./src/index.html --public-url . --no-cache",
     "prettify": "prettier --write './src/**/*.{ts,tsx}'",
     "test": "jest",
