@@ -20,12 +20,6 @@ export const App = () => (
             <Link to="/auth/register">Register</Link>
           </li>
           <li>
-            <Link to="/todo/item/1">Todo Item 1</Link>
-          </li>
-          <li>
-            <Link to="/todo/item/2">Todo Item 2</Link>
-          </li>
-          <li>
             <Link to="/todo/list">Todo List</Link>
           </li>
         </ul>

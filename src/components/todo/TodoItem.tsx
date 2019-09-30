@@ -1,15 +1,15 @@
 import * as React from 'react'
+import { Todo } from '../../api/graphql-types'
 
 interface TodoProps {
-  match?: {
-    params: {
-      id: number
-    }
-  }
+  input: Todo
 }
 
-const TodoItem: React.FC<TodoProps> = ({ match }: TodoProps) => (
-  <div>Todo Item {match && match.params.id}</div>
+const TodoItem: React.FC<TodoProps> = ({ input }) => (
+  <li>
+    <b>#{input.id}: </b>
+    <span>{input.task}</span>
+  </li>
 )
 
 export default TodoItem
