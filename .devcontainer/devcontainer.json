@@ -1,5 +1,5 @@
 {
-    "name": "react-todos-app",
+    "name": "react-todos-app-graphql",
     "dockerFile": "Dockerfile",
     "appPort": [
         1234,
