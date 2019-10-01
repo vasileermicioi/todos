@@ -1,11 +1,13 @@
 import * as React from 'react'
 import { storiesOf } from '@storybook/react'
-import { ApolloProvider } from '@apollo/react-hooks'
-import CreateClient from '../../services/GqlClient'
 import TodoList from './TodoList'
+import { Todo } from 'api/graphql-types'
 
 storiesOf('todo/TodoList', module).add('default', () => (
-  <ApolloProvider client={CreateClient()}>
-    <TodoList />
-  </ApolloProvider>
+  <TodoList
+    todos={[
+      { id: '1', task: 'Create FE project', done: false } as Todo,
+      { id: '2', task: 'Create BE project', done: true } as Todo,
+    ]}
+  />
 ))

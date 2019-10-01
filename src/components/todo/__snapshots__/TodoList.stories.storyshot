@@ -1,7 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FileProperties todo/TodoList default 1`] = `
-<div>
-  Todo List
-</div>
+<ul>
+  <li>
+    <b>
+      #
+      1
+      : 
+    </b>
+    <span>
+      Create FE project
+    </span>
+  </li>
+  <li>
+    <b>
+      #
+      2
+      : 
+    </b>
+    <span>
+      Create BE project
+    </span>
+  </li>
+</ul>
 `;
