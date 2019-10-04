@@ -13,7 +13,7 @@
     "type-check:watch": "tsc --noEmit --watch",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "graphql-codegen": "graphql-codegen --config graphql-codegen.yml"
+    "codegen": "graphql-codegen --config graphql-codegen.yml"
   },
   "husky": {
     "hooks": {
@@ -98,6 +98,7 @@
     "tslint-config-airbnb": "^5.11.2",
     "tslint-config-prettier": "^1.18.0",
     "tslint-react": "^4.1.0",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.3",
+    "waait": "^1.0.5"
   }
 }

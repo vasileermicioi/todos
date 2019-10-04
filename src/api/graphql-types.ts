@@ -9,7 +9,6 @@ export type Scalars = {
   Float: number
   _Any: any
   _FieldSet: any
-  /** The `DateTime` scalar represents a date and time following the ISO 8601 standard */
   DateTime: any
 }
 

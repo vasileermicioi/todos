@@ -3,6 +3,6 @@ import initStoryshots, {
 } from '@storybook/addon-storyshots'
 
 initStoryshots({
-  suite: 'FileProperties',
+  suite: '',
   test: multiSnapshotWithOptions({}),
 })

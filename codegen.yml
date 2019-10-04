@@ -1,5 +1,5 @@
 overwrite: true
-schema: ./schema/graphql.schema.json
+schema: ./src/graphql/todo.graphql
 documents: 'src/**/*.graphql'
 generates:
   src/api/graphql-types.ts:
@@ -26,6 +26,3 @@ generates:
       withHOC: false
       withHooks: true
       withComponent: false
-  ./schema/graphql.schema.json:
-    plugins:
-      - 'introspection'
