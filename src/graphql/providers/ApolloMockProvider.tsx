@@ -3,19 +3,16 @@ import ApolloClient from 'apollo-client'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import { ApolloProvider } from '@apollo/react-hooks'
 import { SchemaLink } from 'apollo-link-schema'
-import { makeExecutableSchema, addMockFunctionsToSchema } from 'graphql-tools'
-import typeDefs from './todo.schema'
+import { makeExecutableSchema } from 'graphql-tools'
+import { merge } from 'lodash'
+import { resolvers, typeDefs } from '../schema'
 
-const ApolloMockingProvider = (props: {
-  customResolvers: any
-  children: ReactNode
-}) => {
-  const mocks = props.customResolvers
+const ApolloMockProvider = (props: { children: ReactNode }) => {
   const schema = makeExecutableSchema({
     typeDefs,
+    resolvers: merge(resolvers),
     resolverValidationOptions: { requireResolversForResolveType: false },
   })
-  addMockFunctionsToSchema({ schema, mocks })
 
   const client = new ApolloClient({
     link: new SchemaLink({ schema }),
@@ -25,4 +22,4 @@ const ApolloMockingProvider = (props: {
   return <ApolloProvider client={client}>{props.children}</ApolloProvider>
 }
 
-export default ApolloMockingProvider
+export default ApolloMockProvider

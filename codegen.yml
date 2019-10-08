@@ -1,8 +1,8 @@
 overwrite: true
-schema: ./src/graphql/todo.graphql
-documents: 'src/**/*.graphql'
+schema: 'src/graphql/**/*.schema.graphql'
+documents: 'src/components/**/*.graphql'
 generates:
-  src/api/graphql-types.ts:
+  src/graphql/types.d.ts:
     hooks:
       afterOneFileWrite:
         - prettier --write
@@ -17,7 +17,7 @@ generates:
     presetConfig:
       extension: .ts
       folder: __graphql__
-      baseTypesPath: api/graphql-types.ts
+      baseTypesPath: graphql/types.d.ts
     plugins:
       - add: // tslint:disable
       - 'typescript-operations'
@@ -26,3 +26,11 @@ generates:
       withHOC: false
       withHooks: true
       withComponent: false
+  src/graphql/resolvers.d.ts:
+    hooks:
+      afterOneFileWrite:
+        - prettier --write
+    plugins:
+      - add: // tslint:disable
+      - typescript
+      - typescript-resolvers

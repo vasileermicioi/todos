@@ -1,17 +1,16 @@
 import * as React from 'react'
-import { useTodoSearchQuery } from './__graphql__/TodoSearch'
-import TodoList from './TodoList'
-import { Todo } from '../../api/graphql-types'
+import { useGetTodosQuery } from './__graphql__/GetTodos'
+import TodoList from '../todo-list/TodoList'
+import { Todo } from '../../../graphql/types'
 
 interface TodoContainerProps {
   page: number
 }
 
 const TodoContainer: React.FC<TodoContainerProps> = ({ page }) => {
-  const { loading, error, data } = useTodoSearchQuery({
+  const { loading, error, data } = useGetTodosQuery({
     variables: {
-      page: +page,
-      search: 'a',
+      top: 3,
     },
   })
   if (loading) return <>Loading TodoList ..</>

@@ -1,0 +1,13 @@
+type Todo {
+  id: ID!
+  task: String!
+  user: User
+}
+
+type Query {
+  todos(first: Int): [Todo!]
+}
+
+type Mutation {
+  createTodo(task: String): Todo!
+}

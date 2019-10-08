@@ -1,6 +1,6 @@
 import * as React from 'react'
-import TodoItem from './TodoItem'
-import { Todo } from '../../api/graphql-types'
+import TodoItem from '../todo-item/TodoItem'
+import { Todo } from '../../../graphql/types'
 
 interface TodoListProps {
   todos: Todo[]

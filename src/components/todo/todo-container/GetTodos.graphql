@@ -1,0 +1,10 @@
+query GetTodos($top: Int = 10) {
+  todos(first: $top) {
+    id
+    task
+    user {
+      id
+      name
+    }
+  }
+}

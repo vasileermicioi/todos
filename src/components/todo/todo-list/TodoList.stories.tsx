@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import TodoList from './TodoList'
-import { Todo } from 'api/graphql-types'
+import { Todo } from '../../../graphql/types'
 
 storiesOf('todo/TodoList', module).add('default', () => (
   <TodoList

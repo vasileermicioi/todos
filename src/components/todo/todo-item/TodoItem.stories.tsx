@@ -2,7 +2,7 @@ import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import { text } from '@storybook/addon-knobs/react'
 import TodoItem from './TodoItem'
-import { Todo } from 'api/graphql-types'
+import { Todo } from '../../../graphql/types'
 
 storiesOf('todo/TodoItem', module).add('default', () => (
   <TodoItem

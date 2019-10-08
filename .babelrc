@@ -15,5 +15,6 @@
     "test": {
       "plugins": ["require-context-hook"]
     }
-  }
+  },
+  "plugins": ["import-graphql"]
 }

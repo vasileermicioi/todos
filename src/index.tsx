@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { render } from 'react-dom'
-import ApiProvider from './graphql/ApolloRemoteProvider'
+import ApiProvider from './graphql/providers/ApolloRemoteProvider'
 
 import './index.css'
 

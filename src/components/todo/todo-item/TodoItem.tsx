@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Todo } from '../../api/graphql-types'
+import { Todo } from '../../../graphql/types'
 
 interface TodoProps {
   input: Todo
